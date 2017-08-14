@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="style/reset.css" />
+<link type="text/css" rel="stylesheet" href="style/text.css" />
+<link type="text/css" rel="stylesheet" href="style/960.css" />
+<link type="text/css" rel="stylesheet" href="style/main.css" />
+<script language="javascript" type="text/javascript" src="js/myfocus-1.2.4.full.js"></script>
+<title>扎堆网 | 周周购</title>
+</head>
+<script type="text/javascript" language="javascript">
+myFocus.set({
+    id:'myFocus',//焦点图盒子ID
+    pattern:'mF_luluJQ',//风格应用的名称
+    time:5,//切换时间间隔(秒)
+    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+    width:736,//设置宽度(主图区)
+    height:420,//设置高度(主图区)
+    txtHeight:'default'//文字层高度设置,'default'为默认高度，0为隐藏
+});
+</script>
+
+<script type="text/javascript" language="javascript">
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+function mopen(id)
+{	
+	mcancelclosetime();
+
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+document.onclick = mclose; 
+</script>
+
+<body>
+<div class="container_16">
+  <div id="top" class="grid_16">
+    <div id="navi">
+      <ul id="sddm">
+        <li><a href="#">首页</a></li>
+        <li><a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">扎堆生活</a>
+        <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<a href="recreation.html" target="_blank">今日休闲</a>
+		<a href="shopping.html" target="_blank">同城购物</a>
+		<a href="#">优质运动</a>
+		<a href="meetall.html" target="_blank">周周购</a>
+		</div>
+        </li>
+        <li><a href="#">扎堆伙伴</a></li>
+        <li><a href="#">个人中心</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="meetall-logo" class="grid_16">
+    <img src="img/meetall-logo.png" style="float:left;" /><span class="white f16">&nbsp;&nbsp;&nbsp;&nbsp;本服务由 <strong>扎堆</strong> 和 <strong>美特好超市</strong> 联合为您打造</span>
+  </div>
+  <div class="clear"></div>
+  <div id="focus" class="grid_16">
+    <div class="focus">
+      <div id="myFocus-wrap">
+        <div id="myFocus" style="visibility:hidden"><!--焦点图盒子-->
+          
+          <div class="loading"><span>请稍候...</span></div>
+          <!--载入画面-->
+          
+          <ul class="pic">
+            <!--内容列表-->
+            
+            <li><a href="#"><img src="img/meetall1.png" thumb="" alt="图片1来源于网络，版权属于作者" text="图片1更详细的描述文字" /></a></li>
+            <li><a href="#"><img src="img/meetall2.png" thumb="" alt="版权属于作者，图片2来源于网络" text="图片2更详细的描述文字" /></a></li>
+            <li><a href="#"><img src="img/meetall3.png" thumb="" alt="图片3来源于网络，版权属于作者" text="图片3更详细的描述文字" /></a></li>
+            <li><a href="#"><img src="img/meetall4.png" thumb="" alt="版权属于作者，图片4来源于网络" text="图片4更详细的描述文字" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div id="footer" class="grid_16">
+    <p>扎堆网 版权所有 Copyright &copy;2011</p>
+  </div>
+</div>
+</body>
+</html>

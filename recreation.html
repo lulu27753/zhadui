@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="style/reset.css" />
+<link type="text/css" rel="stylesheet" href="style/text.css" />
+<link type="text/css" rel="stylesheet" href="style/960.css" />
+<link type="text/css" rel="stylesheet" href="style/main.css" />
+<script language="javascript" type="text/javascript" src="js/myfocus-1.2.4.full.js"></script>
+<title>扎堆网 | 今日休闲</title>
+</head>
+<script type="text/javascript" language="javascript">
+myFocus.set({
+    id:'myFocus',//焦点图盒子ID
+    pattern:'mF_taobao2010',//风格应用的名称
+    time:5,//切换时间间隔(秒)
+    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+    width:685,//设置宽度(主图区)
+    height:270,//设置高度(主图区)
+    txtHeight:'default'//文字层高度设置,'default'为默认高度，0为隐藏
+});
+</script>
+
+<script type="text/javascript" language="javascript">
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+function mopen(id)
+{	
+	mcancelclosetime();
+
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+document.onclick = mclose; 
+</script>
+
+<body>
+<div class="container_16">
+  <div id="top" class="grid_16">
+    <div id="navi">
+      <ul id="sddm">
+        <li><a href="#">首页</a></li>
+        <li><a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">扎堆生活</a>
+        <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<a href="recreation.html" target="_blank">今日休闲</a>
+		<a href="shopping.html" target="_blank">同城购物</a>
+		<a href="#">优质运动</a>
+		<a href="meetall.html" target="_blank">周周购</a>
+		</div>
+        </li>
+        <li><a href="#">扎堆伙伴</a></li>
+        <li><a href="#">个人中心</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid_16">
+    <div class="box-tbg"><img src="img/my-choices.png" alt="我的选择" title="我的选择" /></div>
+  </div>
+  <div id="recreationbg" class="grid_16">
+  </div>
+  <div class="grid_10 left">
+    <div class="basic-box">
+  	  <div class="box-tbg"><img src="img/dinner.png" alt="餐饮美食" title="餐饮美食" /></div>
+      <img src="img/food1.jpg" class="recreation-img" />
+      <img src="img/food2.jpg" class="recreation-img"/>
+      <img src="img/food3.jpg" class="recreation-img" />
+    </div>
+    <div class="basic-box">
+  	  <div class="box-tbg"><img src="img/ktv.png" alt="激情欢唱" title="激情欢唱" /></div>
+      <img src="img/ktv1.jpg" class="recreation-img" />
+      <img src="img/ktv2.jpg" class="recreation-img" />
+    </div>
+    <div class="basic-box">
+  	  <div class="box-tbg"><img src="img/movie.png" alt="光影时光" title="光影时光" /></div>
+      <img src="img/movie1.jpg" class="recreation-img" />
+      <img src="img/movie2.jpg" class="recreation-img" />
+      <img src="img/movie3.jpg" class="recreation-img" />
+    </div>
+  </div>
+  <div class="grid_6 right">
+    <div class="basic-box">
+  	  <div class="box-tbg"><img src="img/hot.png" alt="热门组合" title="热门组合" /></div>
+    </div>
+  </div>
+  <div id="footer" class="grid_16 alpha omega">
+    <p>扎堆网 版权所有 Copyright &copy;2011</p>
+  </div>
+</div>
+</div>
+</body>
+</html>

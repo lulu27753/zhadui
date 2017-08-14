@@ -1,0 +1,309 @@
+/* CSS Document */
+
+body {
+	font-size:12px;
+	font-family:Tahoma, Geneva, sans-serif;
+	background-image:url(../img/indexbg.jpg);
+	background-repeat:no-repeat;
+	background-color:#462039;
+}
+
+div {
+	z-index:1;
+}
+
+img {
+	display:block;
+	z-index:-1;
+}
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+ul li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+a, a:visited {
+	color:#000;
+	text-decoration:none;
+}
+
+#top {
+	background-image:url(../img/banner.png);
+	height:100px;
+	margin-bottom:20px;
+}
+
+#navi {
+	position:relative;
+	top:70px;
+	left:0;
+}
+
+#navi ul li a {
+	display:block;
+	float:left;
+	font-size:14px;
+	font-family:"Microsoft Yahei";
+	font-weight:bold;
+	width:80px;
+	padding:5px;
+	color:#FFF;
+	text-align:center;
+}
+
+#navi ul li a:hover {
+	text-decoration:underline;
+}
+
+#user {
+	text-align:center;
+	font-weight:bold;
+	border-right:2px dashed #999;
+	height:270px;
+	float:left;
+}
+
+#user ul {
+	margin-top:10px;
+}
+
+#user ul li {
+	padding:1px 0;
+}
+
+#focus {
+	float:right;
+	z-index:1;
+}
+
+#life {
+	margin-top:20px;
+}
+
+#life ul {
+	float:right;
+}
+
+#life ul li {
+	float:left;
+	border-left:3px solid #2873C2;
+	border-right:3px solid #2873C2;
+}
+
+#life ul li .left {
+	border-left:6px solid #2873C2;
+	border-right:3px solid #2873C2;
+}
+
+#life ul li .right {
+	border-left:3px solid #2873C2;
+	border-right:6px solid #2873C2;
+}
+
+#life ul li a {
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+	width:219px;
+	display:block;
+	background-color:#0194F9;
+	text-align:center;
+	padding:5px;
+}
+
+#life ul li a:hover {
+	background-color:#2873C2;
+}
+
+#recreationbg {
+	background-image:url(../img/recreation-bg.png);
+	height:280px;
+}
+
+.box-tbg {
+	border-bottom:1px solid #0194F9;
+	padding:0 0 2px 0;
+	margin-bottom:10px;
+}
+
+.basic-box {
+	min-height:200px;
+	margin-top:20px;
+}
+
+.shop-tbg{
+	background-image:url(../img/shopboxtbg.png);
+	background-repeat:repeat-x;
+	height:23px;
+	padding:5px 0 0 10px;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+
+#shop-hot {
+	background-color:#FDF1D4;
+	margin-bottom:20px;
+}
+
+#shop-hot .num {
+	float:left;
+	width:50px;
+}
+
+#shop-hot .brief {
+	padding:2px;
+}
+
+h5 {
+	font-size:14px;
+	font-weight:bold;
+	padding:0;
+	margin:0;
+}
+
+.shop-input {
+	border:1px solid #CCC;
+	height:18px;
+	width:225px;
+	height:24px;
+	margin:5px 0;
+	padding:0;
+	margin-right:5px;
+}
+
+#shop-thin-ad {
+	margin-top:20px;
+	height:60px;
+}
+
+.shop-button {
+	height:26px;
+}
+
+#shop-new {
+	margin-top:15px;
+}
+
+.shop-items {
+	background-color:#FDF1D4;
+	height:320px;
+}
+
+.shop-item {
+	margin:10px auto;
+	background-color:#FFFFFF;
+	height:250px;
+	border:1px solid #999;
+	padding:10px 0;
+	position:relative;
+}
+
+.shop-item-photo {
+	display:block;
+	width:180px;
+	height:120px;
+	padding:5px;
+	margin:0 auto;
+}
+
+.shop-item-intro {
+	width:190px;
+	margin:5px auto;
+}
+
+.shop-item-price {
+	width:190px;
+	margin:5px auto;
+}
+
+.red {
+	color:red;
+}
+
+.gray {
+	color:gray;
+}
+
+#myFocus {
+	z-index:0;
+}
+
+#sddm {
+	z-index:9999;
+}
+
+#sddm div {
+	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #0194F9;
+	top:30px;
+	left:90px;
+	width:95px;
+	border-top:1px solid #0194F9;
+	z-index:9999;
+}
+
+#sddm div a {
+	position: relative;
+	display: block;
+	margin: 0;
+	text-align: left;
+	text-decoration: none;
+	background: #0194F9;
+	color: #FFFFFF;
+	border-left:4px solid #2873C2;
+	font: 12px arial;
+}
+
+#sddm div a:hover{
+	background:#2873C2;
+	color:#FFF;
+}
+
+#footer {
+	border-top:1px solid #EEE;
+	height:80px;
+	margin-top:40px;
+	color:#FFFFFF;
+	text-align:center;
+	padding:5px;
+	width:930px;
+}
+
+.go-see-see {
+	background-image:url(../img/goseesee.png);
+	position:absolute;
+	height:30px;
+	width:80px;
+	top:230px;
+	left:120px;
+}
+
+.recreation-img {
+	padding:10px 0;
+	padding-bottom:1px dashed #0194F9;
+}
+
+.white {
+	color:white;
+}
+
+.f16 {
+	font-size:16px;
+	line-height:50px;
+	vertical-align:bottom;
+}
+
+#meetall-logo {
+	margin-bottom:10px;
+}

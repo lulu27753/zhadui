@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="style/reset.css" />
+<link type="text/css" rel="stylesheet" href="style/text.css" />
+<link type="text/css" rel="stylesheet" href="style/960.css" />
+<link type="text/css" rel="stylesheet" href="style/main.css" />
+<script language="javascript" type="text/javascript" src="js/myfocus-1.2.4.full.js"></script>
+<title>扎堆网 | 同城购物</title>
+</head>
+<script type="text/javascript" language="javascript">
+myFocus.set({
+    id:'myFocus',//焦点图盒子ID
+    pattern:'mF_tbhuabao',//风格应用的名称
+    time:5,//切换时间间隔(秒)
+    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+    width:636,//设置宽度(主图区)
+    height:180,//设置高度(主图区)
+    txtHeight:'default'//文字层高度设置,'default'为默认高度，0为隐藏
+});
+</script>
+
+<script type="text/javascript" language="javascript">
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+function mopen(id)
+{	
+	mcancelclosetime();
+
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+document.onclick = mclose; 
+</script>
+
+<body>
+<div class="container_16">
+  <div id="top" class="grid_16">
+    <div id="navi">
+      <ul id="sddm">
+        <li><a href="#">首页</a></li>
+        <li><a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">扎堆生活</a>
+        <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<a href="recreation.html" target="_blank">今日休闲</a>
+		<a href="shopping.html" target="_blank">同城购物</a>
+		<a href="#">优质运动</a>
+		<a href="meetall.html" target="_blank">周周购</a>
+		</div>
+        </li>
+        <li><a href="#">扎堆伙伴</a></li>
+        <li><a href="#">个人中心</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="shop-banner" class="grid_11 left">
+    <div class="focus">
+      <div id="myFocus-wrap">
+        <div id="myFocus" style="visibility:hidden"><!--焦点图盒子-->
+          
+          <div class="loading"><span>请稍候...</span></div>
+          <!--载入画面-->
+          
+          <ul class="pic">
+            <!--内容列表-->
+            
+            <li><a href="#"><img src="img/shop-1.jpg" thumb="" alt="图片1来源于网络，版权属于作者" text="图片1更详细的描述文字" /></a></li>
+            <li><a href="#"><img src="img/shop-2.jpg" thumb="" alt="版权属于作者，图片2来源于网络" text="图片2更详细的描述文字" /></a></li>
+            <li><a href="#"><img src="img/shop-3.jpg" thumb="" alt="图片3来源于网络，版权属于作者" text="图片3更详细的描述文字" /></a></li>
+            <li><a href="#"><img src="img/shop-4.jpg" thumb="" alt="版权属于作者，图片4来源于网络" text="图片4更详细的描述文字" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="shop-thin-ad">
+      <a href="#"><img src="img/shop-ad.png" /></a>
+    </div>
+  </div>
+  <div class="grid_5 right">
+    <div id="shop-hot">
+      <div class="shop-tbg">热门商品 | What's hot</div>
+      <div class="num"><img src="img/num1.png" /></div><div class="brief"><a href="#"><h5>NIKE AIR JORDAN 2011</h5></a>耐克新款乔丹系列，专柜正品，8折优惠</div>
+      <div class="clear"></div>
+      <div class="num"><img src="img/num2.png" /></div><div class="brief"><a href="#"><h5>《乔布斯传》</h5></a>讲述苹果缔造者乔布斯一生传奇经历</div>
+      <div class="clear"></div>
+      <div class="num"><img src="img/num3.png" /></div><div class="brief"><a href="#"><h5>Apple Nano 5</h5></a>最潮最炫的全新苹果音乐播放器</div>
+      <div class="clear"></div>
+      <div class="num"><img src="img/num4.png" /></div><div class="brief"><a href="#"><h5>Sumsung Galaxy</h5></a>比IPAD更轻薄，比IOS更好用</div>
+      <div class="clear"></div>
+    </div>
+    <div id="shop-search">
+      <div class="shop-tbg">商品搜索 | Search</div>
+      <form>
+        <input type="text" name="search" class="shop-input" /><input type="submit" value="搜索" name="submit" class="shop-button" />
+      </form>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="grid_16">
+    <div class="shop-items">
+      <div id="shop-new" class="shop-tbg">新货上架 | What's new</div>
+      <div class="grid_4" style="margin-left:15px">
+        <div class="shop-item">
+          <img src="img/shop-items/lancome.jpg" class="shop-item-photo" />
+          <div class="shop-item-intro">仅59.9元疯狂抢购！首款旨在亮丽肌肤色泽、减缓衰老迹象的精华！</div>
+          <div class="shop-item-price">
+            <span class="gray">扎堆价：</span><span class="red" style="font-size:16px; font-weight:bold;">58.9元</span><br />
+            <span class="gray">折扣：</span><span class="red">1.7折</span><br />
+            <span class="gray">原价：</span>358元<br />
+            <span class="gray">已售：</span>256
+          </div>
+          <div class="go-see-see">
+          </div>
+        </div>
+      </div>
+      <div class="grid_4 alpha">
+        <div class="shop-item">
+          <img src="img/shop-items/jobs.jpg" class="shop-item-photo" />
+          <div class="shop-item-intro"> 7.21折《史蒂夫?乔布斯传》团购，乔布斯最后的礼物！</div>
+          <div class="shop-item-price">
+            <span class="gray">扎堆价：</span><span class="red" style="font-size:16px; font-weight:bold;">49元</span><br />
+            <span class="gray">折扣：</span><span class="red">7.2折</span><br />
+            <span class="gray">原价：</span>68元<br />
+            <span class="gray">已售：</span>367
+          </div>
+          <div class="go-see-see">
+          </div>
+        </div>
+      </div>
+      <div class="grid_4 alpha">
+        <div class="shop-item">
+          <img src="img/shop-items/duck.jpg" class="shop-item-photo" />
+          <div class="shop-item-intro">仅98元购原价159元的中华著名老字号全聚德大三角礼包</div>
+          <div class="shop-item-price">
+            <span class="gray">扎堆价：</span><span class="red" style="font-size:16px; font-weight:bold;">98元</span><br />
+            <span class="gray">折扣：</span><span class="red">6.2折</span><br />
+            <span class="gray">原价：</span>159元<br />
+            <span class="gray">已售：</span>23
+          </div>
+          <div class="go-see-see">
+          </div>
+        </div>
+      </div>
+      <div class="grid_4 alpha">
+        <div class="shop-item">
+          <img src="img/shop-items/haiou.jpg" class="shop-item-photo" />
+          <div class="shop-item-intro"> 买立减200元，仅999元，市场价3200元，现货！</div>
+          <div class="shop-item-price">
+            <span class="gray">扎堆价：</span><span class="red" style="font-size:16px; font-weight:bold;">1199元</span><br />
+            <span class="gray">折扣：</span><span class="red">3.7折</span><br />
+            <span class="gray">原价：</span>3200元<br />
+            <span class="gray">已售：</span>377
+          </div>
+          <div class="go-see-see">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer" class="grid_16 omega">
+    <p>扎堆网 版权所有 Copyright &copy;2011</p>
+  </div>
+</div>
+</body>
+</html>

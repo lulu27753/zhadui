@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image:url(../img/indexbg.jpg);
+	background-position:left;
+	background-color:#0F030C;
+}
+
+h1 a {
+	display:block;
+	font-family:"Microsoft Yahei", "黑体";
+	font-size:24px;
+	line-height:30px;
+	color:#FFFFFF;
+	font-weight:normal;
+	padding:10px;
+	margin-top:20px;
+}
+
+h1 a:hover {
+	text-decoration:underline;
+}
+
+h1 a:visited {
+	color:#FFFFFF;
+}
+
+#toplink {
+	height:80px;
+}
+
+#no1 {
+	background-color:#4EB5BA;
+	height:150px;
+}
+
+#no2 {
+	background-color:#D64F2F;
+	background-image:url(../img/no2.png);
+	background-repeat:no-repeat;
+	height:150px;
+}
+
+#no3 {
+	background-color:#E29F1A;
+	height:150px;
+}
+
+#no4 {
+	height:150px;
+	background-image:url(../img/happykids2.jpg);
+}
+
+#no5 {
+	background-color:#9AB534;
+	background-image:url(../img/logo.png);
+	height:150px;
+}
+
+#no6 {
+	background-color:#5B5BBD;
+	background-image:url(../img/no6.png);
+	background-repeat:no-repeat;
+	height:150px;
+	position:relative;
+}
+
+#no7 {
+	background-color:#751966;
+	background-image:url(../img/no7.png);
+	height:150px;
+}
+
+#no8 {
+	background-color:#044D91;
+	background-image:url(../img/no8.png);
+	height:150px;
+}
+
+#no9 {
+	background-color:#4DB3B8;
+	height:150px;
+	position:relative;
+}
+
+.space {
+	clear:both;
+	height:10px;
+}
+
+#date {
+	float:left;
+	color:white;
+	font-family:Tahoma, "Microsoft Yahei", "黑体";
+	padding:0px 0px 0px 15px;
+}
+
+.date-day {
+	font-size:75px;
+	line-height:75px;
+	padding:0;
+	margin:0;
+	padding:15px 0 10px 0;
+}
+
+.date-ym {
+	font-size:16px;
+	font-weight:bold;
+	padding:0;
+	margin:0;
+}
+
+#date-nongli {
+	float:right;
+	color:white;
+	text-align:center;
+	font-family:Tahoma, "Microsoft Yahei", "黑体";
+	font-size:16px;
+	width:170px;
+	padding:25px 25px 0 0;
+	font-weight:bold;
+}
+
+#loginform {
+	top:55px;
+	left:70px;
+	position:absolute;
+}
+
+.loginform {
+	display:block;
+	padding:9px 0 1px 0;
+	margin:0;
+	background:transparent;
+	border:none;
+	border-bottom:1px solid #FFFFFF;
+	color:#FFFFFF;
+	width:130px;
+	height:16px;
+	font-size:16px;
+	line-height:12px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+#loginbutton {
+	position:absolute;
+	top:62px;
+	left:212px;
+}
+
+#loginbutton .small a {
+	display:block;
+	height:25px;
+	color:#FFFFFF;
+	padding:9px 5px 5px 2px;
+}
+	
+.loginbutton {
+	background:url(../img/login.png);
+	background-color:transparent;
+	border:none;
+	margin:0;
+	padding:0;
+	height:22px;
+	width:60px;
+}
+
+.loginbutton:hover {
+	cursor:pointer;
+}
+
+#weather {
+	float:right;
+	color:#FFFFFF;
+	padding:22px 15px 0 0;
+}
+
+.city {
+	font-family:"Microsoft Yahei", "黑体";
+	font-size:24px;
+	font-weight:bold;
+}
+
+.temperature {
+	font-family:Tahoma, "Microsoft Yahei", "黑体";
+	font-size:18px;
+}
+
+.weather {
+	font-family:"Microsoft Yahei", "黑体";
+	font-size:18px;
+}
+
+#introduction {
+	font-family:"Microsoft Yahei", "黑体";
+	font-size:16px;
+	color:#FFFFFF;
+	padding:30px;
+}
+
+#weather img {
+	width:80px;
+	height:80px;
+	position:absolute;
+	top:30px;
+	left:15px;
+}

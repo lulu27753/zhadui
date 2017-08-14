@@ -1,0 +1,75 @@
+/* CSS Document */
+
+body {
+	font-size:12px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+
+img {
+	display:block;
+}
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+ul li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#main {
+	background-image:url(../img/bg.png);
+	height:600px;
+	margin:50px auto;
+}
+
+#login {
+	top:360px;
+	left:80px;
+	position:relative;
+	width:340px;
+}
+
+label {
+	display:inline-block;
+	width:100px;
+	text-align:right;
+	font-size:24px;
+	font-weight:bold;
+	padding:5px;
+	vertical-align:middle;
+}
+
+.input_text {
+	border:2px solid #666;
+	padding:0;
+	margin:0;
+	width:220px;
+	height:30px;
+	font-size:22px;
+	vertical-align:middle;
+	background:transparent;
+}
+
+#submit {
+	text-align:right;
+}
+
+.button {
+	height:26px;
+	min-width:60px;
+	border:none;
+	background-color:#CCC;
+	font-size:18px;
+	margin:5px;
+}
+
+#signup {
+	font-size:18px;
+	text-align:right;
+}
